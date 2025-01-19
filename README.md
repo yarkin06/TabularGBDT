@@ -4,23 +4,38 @@ This is the GitHub repository for the [paper](https://arxiv.org/abs/2410.03705):
 
 This repository includes all the experiments conducted for the medical diagnosis tasks. Results for the tabular deep learning and machine learning (including GBDTs) models are evaluated in the respective folders in `DL/` and `ML/`. Refer to the `README.md` files inside these folders for more information.
 
+## Cite
+
+Please cite this work if you intend to use this code for your research:
+
+```bib
+@article{yildiz2024gradient,
+  title={Gradient Boosting Decision Trees on Medical Diagnosis over Tabular Data},
+  author={Y{\i}ld{\i}z, A Yark{\i}n and Kalayci, Asli},
+  journal={arXiv preprint arXiv:2410.03705},
+  year={2024}
+}
+```
+
 ## Datasets
 
-| **Dataset**      | **Samples** | **Features** | **Classes** | **Task**       |
-|-------------------|-------------|--------------|-------------|----------------|
-| Cardiovascular Disease         | 70,000      | 12           | 2           | Binary         |
-| Heart Failure    | 299         | 13           | 2           | Binary         |
-| Parkinsons       | 195         | 23           | 2           | Binary         |
-| EEG Eye State    | 15,000      | 15           | 2           | Binary         |
-| Eye Movements    | 11,000      | 28           | 3           | Multi-Class    |
-| Arcene           | 200         | 10,000       | 2           | Binary         |
-| Prostate         | 102         | 12,600       | 2           | Binary         |
+| **Dataset**                | **Samples** | **Features** | **Classes** | **Task**       |
+|----------------------------|-------------|--------------|-------------|----------------|
+| Cardiovascular Disease     | 70k         | 12           | 2           | Binary         |
+| Heart Failure              | 299         | 13           | 2           | Binary         |
+| Parkinsons                 | 195         | 23           | 2           | Binary         |
+| EEG Eye State              | 15k         | 15           | 2           | Binary         |
+| Eye Movements              | 11k         | 28           | 3           | Multi-Class    |
+| Arcene                     | 200         | 10k          | 2           | Binary         |
+| Prostate                   | 102         | 12k          | 2           | Binary         |
 
 ## Requirements
 
 Experiments are conducted in Linux, with the packages stated in both `environment.yml` and `requirements.txt`.
 
 ## Results
+
+### Numerical Results
 
 The table below shows the 8-fold cross-validation ROC AUC scores for traditional ML models, state-of-the-art tabular deep learning (DL) methods, and gradient-boosted decision tree (GBDT) models on different datasets. Higher scores are better. The best scores are **bolded**, and the second bests are *italicized*.
 
@@ -41,18 +56,12 @@ The table below shows the 8-fold cross-validation ROC AUC scores for traditional
 | LightGBM                   | *80.296 ± 0.004*          | *91.490 ± 0.027*          | *98.623 ± 0.015*          | 97.008 ± 0.004            | *89.059 ± 0.007*          | 91.883 ± 0.043           | *95.486 ± 0.052*         | **2.571**  |
 | CatBoost                   | **80.378 ± 0.004**        | 91.056 ± 0.034            | 97.740 ± 0.014            | 97.739 ± 0.003            | 88.954 ± 0.006            | 91.396 ± 0.040           | **96.379 ± 0.053**        | *3.143*    |
 
+### Visualizations
 
+Here are two example plots for Cardiovascular Disease and Eye Movements datasets that visualizes the trade-off between ROC AUC score and training time for all models.
 
+**Cardiovascular Disease:**
+![Cardiovascular Disease](AUC_Score_vs_Training_Time_eye_movements.png)
 
-## Cite
-
-Please cite this work if you intend to use this code for your research:
-
-```bib
-@article{yildiz2024gradient,
-  title={Gradient Boosting Decision Trees on Medical Diagnosis over Tabular Data},
-  author={Y{\i}ld{\i}z, A Yark{\i}n and Kalayci, Asli},
-  journal={arXiv preprint arXiv:2410.03705},
-  year={2024}
-}
-```
+**Eye Movements:**
+![Eye Movements](AUC_Score_vs_Training_Time_Cardiovascular-Disease-dataset.png)
