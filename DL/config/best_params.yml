@@ -1,0 +1,101 @@
+
+parameters: {
+    Cardiovascular-Disease-dataset: {
+        MLP: {
+            hidden_dim: 64, n_layers: 2, learning_rate: 0.000991830290613885
+        },
+        TabNet: {
+            n_d: 55, n_steps: 4, gamma: 1.274038038312499, cat_emb_dim: 3, n_independent: 2, n_shared: 3, momentum: 0.015728669614532297, mask_type: entmax
+        },
+        VIME: {
+            p_m: 0.7197423927014175, alpha: 6.005519066836896, K: 20, beta: 0.20696435467011653
+        },
+        TabTransformer: {
+            dim: 128, depth: 12, heads: 4, weight_decay: -3, learning_rate: -3, dropout: 0.2
+        },
+        STG: {
+            learning_rate: 0.003643277304808665, lam: 0.024047974809160357, hidden_dims: [500, 500, 10]
+        },
+    },
+    heart_failure: {
+        MLP: {
+            hidden_dim: 98, n_layers: 5, learning_rate: 0.0005030778353397833
+        },
+        TabNet: {
+            n_d: 14, n_steps: 10, gamma: 1.382776822687878, cat_emb_dim: 1, n_independent: 4, n_shared: 4, momentum: 0.0954168298031801, mask_type: entmax
+        },
+        VIME: {
+            p_m: 0.6618738704740595, alpha: 0.3544811091518305, K: 3, beta: 0.3099182531536373
+        },
+        TabTransformer: {
+            dim: 64, depth: 2, heads: 2, weight_decay: -6, learning_rate: -3, dropout: 0.1
+        },
+        STG: {
+            learning_rate: 0.04297983395252709, lam: 0.4840995276902871, hidden_dims: [500, 50, 10]
+        },
+    },
+    parkinsons: {
+        MLP: {
+            hidden_dim: 100, n_layers: 5, learning_rate: 0.0005808777487630783
+        },
+        TabNet: {
+            n_d: 32, n_steps: 5, gamma: 1.1071151929032597, cat_emb_dim: 2, n_independent: 3, n_shared: 3, momentum: 0.22720740490357608, mask_type: entmax
+        },
+        VIME: {
+            p_m: 0.8315092227280547, alpha: 4.197637963009846, K: 2, beta: 0.38117923919907404
+        },
+        TabTransformer: {
+            dim: 32, depth: 12, heads: 4, weight_decay: -4, learning_rate: -3, dropout: 0
+        },
+        STG: {
+            learning_rate: 0.0980907658477281, lam: 0.4550028592420577, hidden_dims: [500, 50, 10]
+        },
+    },
+
+    eeg-eye-state: {
+    MLP: {hidden_dim: 100, n_layers: 5, learning_rate: 0.000609787022799593},
+    TabNet: {n_d: 9, n_steps: 8, gamma: 1.1380282276645923, cat_emb_dim: 3, n_independent: 2, n_shared: 5, momentum: 0.004070566358257884, mask_type: sparsemax},
+    VIME: {p_m: 0.8568076816346866, alpha: 9.09940788623836, K: 2, beta: 0.320000332263219},
+    TabTransformer: {dim: 128, depth: 3, heads: 2, weight_decay: -6, learning_rate: -3, dropout: 0},
+    STG: {learning_rate: 0.004646681018166811, lam: 0.0017815366431440235, hidden_dims: [500, 400, 20]},
+    },
+
+    eye_movements: {
+    MLP: {hidden_dim: 10, n_layers: 4, learning_rate: 0.0007718789350319815},
+    TabNet: {n_d: 50, n_steps: 4, gamma: 1.0102063393141896, cat_emb_dim: 1, n_independent: 3, n_shared: 3, momentum: 0.1624799067459955, mask_type: entmax},
+    VIME: {p_m: 0.10837103587334636, alpha: 2.2747317939082112, K: 20, beta: 9.96384123298901},
+    TabTransformer: {dim: 64, depth: 6, heads: 2, weight_decay: -5, learning_rate: -5, dropout: 0.1},
+    STG: {learning_rate: 0.04929469939654672, lam: 0.04770064483038667, hidden_dims: [500, 500, 10]},
+    },
+
+    arcene: {
+    MLP: {hidden_dim: 62, n_layers: 5, learning_rate: 0.0009087327343875954},
+    TabNet: {n_d: 38, n_steps: 3, gamma: 1.6018923025204317, cat_emb_dim: 3, n_independent: 4, n_shared: 1, momentum: 0.3381329824491747, mask_type: entmax},
+    VIME: {p_m: 0.36206515047493054, alpha: 0.1357939777401066, K: 3, beta: 0.3258803614692587},
+    TabTransformer: {dim: 64, depth: 3, heads: 4, weight_decay: -3, learning_rate: -4, dropout: 0.3},
+    STG: {learning_rate: 0.0742537813717184, lam: 0.7403010863666676, hidden_dims: [500, 400, 20]},
+    },
+
+    Prostate: {
+    MLP: {hidden_dim: 96, n_layers: 5, learning_rate: 0.0006096500748757435},
+    TabNet: {n_d: 8, n_steps: 10, gamma: 1.9793013092006424, cat_emb_dim: 2, n_independent: 2, n_shared: 5, momentum: 0.39985143357379255, mask_type: entmax},
+    VIME: {p_m: 0.25968666131617646, alpha: 3.7228638632351854, K: 5, beta: 6.899358536957861},
+    TabTransformer: {dim: 32, depth: 1, heads: 2, weight_decay: -2, learning_rate: -4, dropout: 0.3},
+    STG: {learning_rate: 0.060536247691921515, lam: 0.11171354640788084, hidden_dims: [500, 400, 20]},
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
