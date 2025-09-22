@@ -1,6 +1,6 @@
 # Performance Benchmark on Medical Diagnosis over Tabular Data
 
-This is the GitHub repository for the [paper](https://arxiv.org/abs/2410.03705): A. Yarkın Yıldız, and Asli Kalayci. "Gradient Boosting Decision Trees on Medical Diagnosis over Tabular Data." arXiv preprint arXiv:2410.03705, 2024.
+This is the GitHub repository for the [paper](https://ieeexplore.ieee.org/abstract/document/11114069): A. Yarkın Yıldız, and Asli Kalayci. "Gradient boosting decision trees on medical diagnosis over tabular data." 2025 IEEE International Conference on AI and Data Analytics (ICAD). IEEE, 2025.
 
 This repository includes all the experiments conducted for the medical diagnosis tasks. Results for the tabular deep learning and machine learning (including GBDTs) models are evaluated in the respective folders in `DL/` and `ML/`. Refer to the `README.md` files inside these folders for more information.
 
@@ -9,11 +9,13 @@ This repository includes all the experiments conducted for the medical diagnosis
 Please cite this work if you intend to use this code for your research:
 
 ```bib
-@article{yildiz2024gradient,
-  title={Gradient Boosting Decision Trees on Medical Diagnosis over Tabular Data},
+@inproceedings{yildiz2025gradient,
+  title={Gradient boosting decision trees on medical diagnosis over tabular data},
   author={Y{\i}ld{\i}z, A Yark{\i}n and Kalayci, Asli},
-  journal={arXiv preprint arXiv:2410.03705},
-  year={2024}
+  booktitle={2025 IEEE International Conference on AI and Data Analytics (ICAD)},
+  pages={1--8},
+  year={2025},
+  organization={IEEE}
 }
 ```
 
